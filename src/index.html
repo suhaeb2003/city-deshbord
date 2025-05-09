@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="../dist/style.css" />
+  <title>জেলা সেবা এডমিন প্যানেল</title>
+</head>
+
+<body>
+  <header class="sticky top-0 z-50  ">
+    <nav
+      class="from justify-between bg-gradient-to-r from-blue-600 to-blue-400 px-4 py-3 text-white sm:flex sm:px-5"
+      aria-label="Breadcrumb">
+      <div>
+        
+        <a href="" class="font-anek inline text-xl font-semibold dark:text-white">
+          <i class="fa-regular fa-address-card rounded-full border border-gray-200 bg-gray-50 p-2 text-green-700"></i>
+          জেলা সেবা এডমিন প্যানেল
+        </a>
+      </div>
+      <div>
+        <ol class="mb-3 inline-flex items-center space-x-1 sm:mb-0 md:space-x-2 rtl:space-x-reverse">
+          <li>
+            <div class="flex items-center">
+              <a href="#"
+                class="font-anek ms-1 text-sm font-medium text-gray-300 hover:text-blue-600 md:ms-2 dark:hover:text-white"><i
+                  class="fa-solid fa-gauge mr-1.5"></i>ড্যাশর্বোড</a>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center relative">
+              <p
+                class=" font-anek ms-1 text-sm font-medium text-gray-300 hover:text-blue-600 md:ms-2 dark:hover:text-white hover:cursor-pointer adminMenage" id=""><i
+                  class="fa-solid fa-users-gear mr-1.5"  ></i>এডমিন
+                ম্যানেজমেন্ট <i class="fa-solid fa-caret-down ms-1.5"></i></p>
+                <div class=" bg-white border broder-gray-200 absolute w-max p-2 top-8 rounded hidden admin_div" id="">
+                  <ul>
+                    <li ><a href="" class="font-anek text-sm font-medium text-black hover:bg-gray-50 "><i class="fas fa-user-edit mr-1"></i>প্রোফাইল</a></li>
+                    <li><a href="adminMenage.html" class="font-anek text-sm font-medium text-black hover:bg-gray-50"><i class="fas fa-users mr-1"></i>নতুন এডমিন যু্ক্ত করুন</a></li>
+                  </ul>
+                </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <a href="fileUpload.html"
+                class="font-anek ms-1 text-sm font-medium text-gray-300 hover:text-blue-600 md:ms-2 dark:hover:text-white"><i
+                  class="fa-solid fa-folder-open mr-1.5"></i>ফাইল
+                ম্যানেজার</a>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <a href="apiList.html"
+                class="font-anek ms-1 text-sm font-medium text-gray-300 hover:text-blue-600 md:ms-2 dark:hover:text-white"><i
+                  class="fa-solid fa-terminal mr-1.5"></i>এপিআই তালিকা</a>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <p
+                class="font-anek ms-1 text-sm font-medium text-gray-300 hover:text-blue-600 md:ms-2 dark:hover:text-white adminMenage hover:cursor-pointer" id=""><i
+                  class="fa-solid fa-circle-user mr-1.5"></i>Users
+                <i class="fa-solid fa-caret-down ms-1.5"></i></p>
+
+                <div class=" bg-white border broder-gray-200 absolute w-max p-2 top-10 right-0 rounded hidden admin_div" id="">
+                  <ul>
+                    <li ><a href="profile.html" class="font-anek text-sm font-medium text-black hover:bg-gray-50 "><i class="fas fa-user-edit mr-1"></i>প্রোফাইল</a></li>
+                    <li><a href="" class="font-anek text-sm font-medium text-black hover:bg-gray-50"><i class="fa-solid fa-right-from-bracket mr-1"></i>লগ আউট</a></li>
+                  </ul>
+                </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </nav>
+  </header>
+
+  <article>
+    <section class="py-5 md:py-10">
+      <div class="mx-auto w-11/12">
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
+          <div
+            class="group flex rounded border-x-3 border-blue-500 p-5 shadow-xs shadow-gray-400 transition-all duration-300 hover:shadow-xl">
+            <div class="w-80">
+              <h1 class="font-anek text-xl font-semibold text-blue-500">
+                টোটাল সার্বিস
+              </h1>
+              <p class="font-anek text-2xl font-semibold text-gray-500">10</p>
+            </div>
+            <div class="grid w-20 content-center">
+              <p>
+                <i
+                  class="fa-solid fa-calendar rounded-full bg-blue-200 p-3 text-2xl text-blue-600 transition-all duration-300 group-hover:text-3xl"></i>
+              </p>
+            </div>
+          </div>
+          <div
+            class="group flex rounded border-x-3 border-green-700 p-5 shadow-xs shadow-gray-400 transition-all duration-300 hover:shadow-xl">
+            <div class="w-80">
+              <h1 class="font-anek text-xl font-semibold text-green-700">
+                স্বাস্থ্যসেবা সার্ভিসেস
+              </h1>
+              <p class="font-anek text-2xl font-semibold text-gray-500">10</p>
+            </div>
+            <div class="grid w-20 content-center">
+              <p>
+                <i
+                  class="fas fa-stethoscope rounded-full bg-green-200 p-3 text-2xl text-green-700 transition-all duration-300 group-hover:text-3xl"></i>
+              </p>
+            </div>
+          </div>
+          <div
+            class="group flex rounded border-x-3 border-rose-700 p-5 shadow-xs shadow-gray-400 transition-all duration-300 hover:shadow-xl">
+            <div class="w-80">
+              <h1 class="font-anek text-xl font-semibold text-rose-700">
+                জরুরি সেবা
+              </h1>
+              <p class="font-anek text-2xl font-semibold text-gray-500">10</p>
+            </div>
+            <div class="grid w-20 content-center">
+              <p>
+                <i
+                  class="fas fa-phone-alt rounded-full bg-rose-100 p-3 text-2xl text-rose-700 transition-all duration-300 group-hover:text-3xl"></i>
+              </p>
+            </div>
+          </div>
+          <div
+            class="group flex rounded border-x-3 border-yellow-400 p-5 shadow-xs shadow-gray-400 transition-all duration-300 hover:shadow-xl">
+            <div class="w-80">
+              <h1 class="font-anek text-xl font-semibold text-yellow-500">
+                ইউটিলিটি সার্ভিসেস
+              </h1>
+              <p class="font-anek text-2xl font-semibold text-gray-500">10</p>
+            </div>
+            <div class="grid w-20 content-center">
+              <p>
+                <i
+                  class="fas fa-bolt rounded-full bg-yellow-200 p-3 text-2xl text-yellow-600 transition-all duration-300 group-hover:text-3xl"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 md:py-10">
+      <div class="mx-auto w-11/12 border-1 border-gray-300 shadow shadow-gray-400">
+        <!-- সিটি সার্বিস -->
+        <div class="flex items-center border-b border-gray-300 bg-gray-50 py-5">
+          <div class="w-4/5">
+            <hr class="h-0.5 rounded-full border-0 bg-gradient-to-r from-transparent via-blue-300 to-transparent" />
+          </div>
+          <div class="w-2/5">
+            <h1 class="font-anek text-center text-3xl font-semibold text-blue-500">
+              সিটি সার্ভিসেস
+            </h1>
+          </div>
+          <div class="w-4/5">
+            <hr class="h-0.5 rounded-full border-0 bg-gradient-to-r from-transparent via-blue-300 to-transparent" />
+          </div>
+        </div>
+        <!-- সাস্থ্য সেবা ডিব -->
+        <div class="flex items-center py-4">
+          <div class="w-4/5">
+            <hr class="h-0.5 rounded-full border-0 bg-gradient-to-r from-transparent via-green-300 to-transparent" />
+          </div>
+          <div class="w-2/5">
+            <h1 class="font-anek text-center text-2xl font-semibold text-green-700">
+              স্বাস্থ্যসেবা
+            </h1>
+          </div>
+          <div class="w-4/5">
+            <hr class="h-0.5 rounded-full border-0 bg-gradient-to-r from-transparent via-green-300 to-transparent" />
+          </div>
+        </div>
+        <!-- সাস্থ্য সেবা সকল কার্ড -->
+        <div class="mx-auto w-[98%] py-5">
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
+            <!-- সাস্থ্য সেবা সিঙ্গেল কার্ড -->
+            <div
+              class="group  rounded border-x-3 border-green-700 p-5 shadow-xs shadow-gray-400 transition-all duration-300 hover:shadow-xl hover:translate-y-[-10px]">
+              <div class="flex ">
+                <div class="w-80">
+                  <h1 class="font-anek text-xl font-semibold text-gray-800">
+                    অ্যাম্বুলেন্স সেবা
+                  </h1>
+                  <h1 class="font-anek text-xs font-semibold text-gray-500">
+                    জরুরী মুহূর্তে অ্যাম্বুলেন্স সেবা পান
+                  </h1>
+                </div>
+                <div class="grid w-20 content-center">
+                  <p>
+                    <i class="fas fa-ambulance rounded-full bg-blue-200 p-3 text-2xl text-green-700  "></i>
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between mt-3">
+                <div>
+                  <p
+                    class="flex items-center rounded bg-green-700 px-3 py-1 text-white transition-all duration-300 hover:bg-green-900 font-anek text-xs">
+                    মোট: ২২
+                  </p>
+                </div>
+                <div>
+                  <a href="ambulance.html"
+                    class="flex items-center rounded bg-green-700 px-3 py-1 text-white transition-all duration-300 hover:bg-green-900 font-anek text-xs"><i
+                      class="fa-solid fa-arrow-right mr-1"></i> পরিচালনা করুন</a>
+                </div>
+              </div>
+            </div>
+            <!-- সাস্থ্য সেবা সিঙ্গেল কার্ড -->
+            <div
+              class="group  rounded border-x-3 border-green-700 p-5 shadow-xs shadow-gray-400 transition-all duration-300 hover:shadow-xl hover:translate-y-[-10px]">
+              <div class="flex ">
+                <div class="w-80">
+                  <h1 class="font-anek text-xl font-semibold text-gray-800">
+                    হাসপাতাল
+                  </h1>
+                  <h1 class="font-anek text-xs font-semibold text-gray-500">
+                    সকল হাসপাতালের তথ্য পান
+                  </h1>
+                </div>
+                <div class="grid w-20 content-center">
+                  <p>
+                    <i class="fas fa-hospital rounded-full bg-blue-200 p-3 text-2xl text-green-700  "></i>
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between mt-3">
+                <div>
+                  <p
+                    class="flex items-center rounded bg-green-700 px-3 py-1 text-white transition-all duration-300 hover:bg-green-900 font-anek text-xs">
+                    মোট: ২২
+                  </p>
+                </div>
+                <div>
+                  <a href="hospital.html"
+                    class="flex items-center rounded bg-green-700 px-3 py-1 text-white transition-all duration-300 hover:bg-green-900 font-anek text-xs"><i
+                      class="fa-solid fa-arrow-right mr-1"></i> পরিচালনা করুন</a>
+                </div>
+              </div>
+            </div>
+            <!-- সাস্থ্য সেবা সিঙ্গেল কার্ড -->
+            <div
+              class="group  rounded border-x-3 border-green-700 p-5 shadow-xs shadow-gray-400 transition-all duration-300 hover:shadow-xl hover:translate-y-[-10px]">
+              <div class="flex ">
+                <div class="w-80">
+                  <h1 class="font-anek text-xl font-semibold text-gray-800">
+                    ডাক্তার
+                  </h1>
+                  <h1 class="font-anek text-xs font-semibold text-gray-500">
+                    বিশেষজ্ঞ ডাক্তারদের তথ্য পান
+                  </h1>
+                </div>
+                <div class="grid w-20 content-center">
+                  <p>
+                    <i class="fas fa-user-md rounded-full bg-blue-200 p-3 text-2xl text-green-700  "></i>
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between mt-3">
+                <div>
+                  <p
+                    class="flex items-center rounded bg-green-700 px-3 py-1 text-white transition-all duration-300 hover:bg-green-900 font-anek text-xs">
+                    মোট: ২২
+                  </p>
+                </div>
+                <div>
+                  <a href="doctor.html"
+                    class="flex items-center rounded bg-green-700 px-3 py-1 text-white transition-all duration-300 hover:bg-green-900 font-anek text-xs"><i
+                      class="fa-solid fa-arrow-right mr-1"></i> পরিচালনা করুন</a>
+                </div>
+              </div>
+            </div>
+            <!-- সাস্থ্য সেবা সিঙ্গেল কার্ড -->
+            <div
+              class="group  rounded border-x-3 border-green-700 p-5 shadow-xs shadow-gray-400 transition-all duration-300 hover:shadow-xl hover:translate-y-[-10px]">
+              <div class="flex ">
+                <div class="w-80">
+                  <h1 class="font-anek text-xl font-semibold text-gray-800">
+                    স্বাস্থ্য কেন্দ্র
+                  </h1>
+                  <h1 class="font-anek text-xs font-semibold text-gray-500">
+                    স্বাস্থ্য কেন্দ্রের তথ্য পান
+                  </h1>
+                </div>
+                <div class="grid w-20 content-center">
+                  <p>
+                    <i class="fas fa-clinic-medical rounded-full bg-blue-200 p-3 text-2xl text-green-700  "></i>
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between mt-3">
+                <div>
+                  <p 
+                    class="flex items-center rounded bg-green-700 px-3 py-1 text-white transition-all duration-300 hover:bg-green-900 font-anek text-xs">
+                    মোট: ২২
+                  </ড়>
+                </div>
+                <div>
+                  <a href="health.html"
+                    class="flex items-center rounded bg-green-700 px-3 py-1 text-white transition-all duration-300 hover:bg-green-900 font-anek text-xs"><i
+                      class="fa-solid fa-arrow-right mr-1"></i> পরিচালনা করুন</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="h-[1px]  border-0 bg-gray-200 my-10">
+
+        <!-- জরুরি সাস্থ্য সেবা ডিব -->
+        <div class="flex items-center py-4">
+          <div class="w-4/5">
+            <hr class="h-0.5 rounded-full border-0 bg-gradient-to-r from-transparent via-rose-300 to-transparent" />
+          </div>
+          <div class="w-2/5">
+            <h1 class="font-anek text-center text-2xl font-semibold text-rose-700">
+              জরুরি সেবা
+            </h1>
+          </div>
+          <div class="w-4/5">
+            <hr class="h-0.5 rounded-full border-0 bg-gradient-to-r from-transparent via-rose-300 to-transparent" />
+          </div>
+        </div>
+        <!-- জরুরি সেবা সকল কার্ড -->
+        <div class="mx-auto w-[98%] py-5">
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-3">
+            <!-- জরুরি সেবা সিঙ্গেল কার্ড -->
+            <div
+              class="group  rounded border-x-3 border-rose-700 p-5 shadow-xs shadow-gray-400 transition-all duration-300 hover:shadow-xl hover:translate-y-[-10px]">
+              <div class="flex ">
+                <div class="w-80">
+                  <h1 class="font-anek text-xl font-semibold text-gray-800">
+                    ফায়ার সার্ভিস
+                  </h1>
+                  <h1 class="font-anek text-xs font-semibold text-gray-500">
+                    অগ্নি নির্বাপন সেবা পান
+                  </h1>
+                </div>
+                <div class="grid w-20 content-center">
+                  <p>
+                    <i class="fas fa-fire-extinguisher rounded-full bg-blue-200 p-3 text-2xl text-rose-700  "></i>
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between mt-3">
+                <div>
+                  <p
+                    class="flex items-center rounded bg-rose-700 px-3 py-1 text-white transition-all duration-300 hover:bg-rose-900 font-anek text-xs">
+                    মোট: 10
+                  </p>
+                </div>
+                <div>
+                  <a href="fireService.html"
+                    class="flex items-center rounded bg-rose-700 px-3 py-1 text-white transition-all duration-300 hover:bg-rose-900 font-anek text-xs"><i
+                      class="fa-solid fa-arrow-right mr-1"></i> পরিচালনা করুন</a>
+                </div>
+              </div>
+            </div>
+            <!-- জরুরি সেবা সিঙ্গেল কার্ড -->
+            <div
+              class="group  rounded border-x-3 border-rose-700 p-5 shadow-xs shadow-gray-400 transition-all duration-300 hover:shadow-xl hover:translate-y-[-10px]">
+              <div class="flex ">
+                <div class="w-80">
+                  <h1 class="font-anek text-xl font-semibold text-gray-800">
+                    জরুরি হেল্পলাইন
+                  </h1>
+                  <h1 class="font-anek text-xs font-semibold text-gray-500">
+                    ২৪/৭ জরুরি সহায়তা পান
+                  </h1>
+                </div>
+                <div class="grid w-20 content-center">
+                  <p>
+                    <i class="fas fa-phone-alt rounded-full bg-blue-200 p-3 text-2xl text-rose-700  "></i>
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between mt-3">
+                <div class="">
+                  <p
+                    class="flex items-center rounded bg-rose-700 px-3 py-1 text-white transition-all duration-300 hover:bg-rose-900 font-anek text-xs">
+                    মোট: 10
+                  </p>
+                </div>
+                <div class="">
+                  <a href="emergency.html"
+                    class="flex items-center rounded bg-rose-700 px-3 py-1 text-white transition-all duration-300 hover:bg-rose-900 font-anek text-xs"><i
+                      class="fa-solid fa-arrow-right mr-1"></i> পরিচালনা করুন</a>
+                </div>
+              </div>
+            </div>
+            <!-- জরুরি সেবা সিঙ্গেল কার্ড -->
+            <div
+              class="group  rounded border-x-3 border-rose-700 p-5 shadow-xs shadow-gray-400 transition-all duration-300 hover:shadow-xl hover:translate-y-[-10px]">
+              <div class="flex ">
+                <div class="w-80">
+                  <h1 class="font-anek text-xl font-semibold text-gray-800">
+                    রক্তদাতা
+                  </h1>
+                  <h1 class="font-anek text-xs font-semibold text-gray-500">
+                    স্বেচ্ছায় রক্তদান করুন
+                  </h1>
+                </div>
+                <div class="grid w-20 content-center">
+                  <p>
+                    <i class="fas fa-tint  rounded-full bg-blue-200 p-3 text-2xl text-rose-700  "></i>
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between mt-3">
+                <div class="">
+                  <p
+                    class="flex items-center rounded bg-rose-700 px-3 py-1 text-white transition-all duration-300 hover:bg-rose-900 font-anek text-xs">
+                    মোট: 10
+                  </p>
+                </div>
+                <div class="">
+                  <a href="bloodService.html"
+                    class="flex items-center rounded bg-rose-700 px-3 py-1 text-white transition-all duration-300 hover:bg-rose-900 font-anek text-xs"><i
+                      class="fa-solid fa-arrow-right mr-1"></i> পরিচালনা করুন</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <hr class="h-[1px]  border-0 bg-gray-200 my-10">
+
+        <!-- আইনি ও মিডিয়া সেবা ডিব -->
+        <div class="flex items-center py-4">
+          <div class="w-4/5">
+            <hr class="h-0.5 rounded-full border-0 bg-gradient-to-r from-transparent via-cyan-300 to-transparent" />
+          </div>
+          <div class="w-2/5">
+            <h1 class="font-anek text-center text-2xl font-semibold text-cyan-500">
+              আইনি ও মিডিয়া
+            </h1>
+          </div>
+          <div class="w-4/5">
+            <hr class="h-0.5 rounded-full border-0 bg-gradient-to-r from-transparent via-cyan-300 to-transparent" />
+          </div>
+        </div>
+        <!-- আইনি ও মিডিয়া সকল কার্ড -->
+        <div class="mx-auto w-[98%] py-5">
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2">
+            <!-- আইনি ও মিডিয়া সিঙ্গেল কার্ড -->
+            <div
+              class="group  rounded border-x-3 border-cyan-500 p-5 shadow-xs shadow-gray-400 transition-all duration-300 hover:shadow-xl hover:translate-y-[-10px]">
+              <div class="flex justify-between">
+                <div class="w-80">
+                  <h1 class="font-anek text-xl font-semibold text-gray-800">
+                    আইনজীবি 
+                  </h1>
+                  <h1 class="font-anek text-xs font-semibold text-gray-500">
+                    আইনি সহায়তা এবং পরামর্শ পান
+                  </h1>
+                </div>
+                <div class=" w-20 flex justify-end">
+                  <p>
+                    <i class="fas fa-gavel rounded-full bg-cyan-100 p-3 text-2xl text-cyan-500  "></i>
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between mt-3">
+                <div>
+                  <p
+                    class="font-anek inline rounded bg-cyan-500 text-xs font-semibold text-white px-2 py-0 hover:bg-cyan-700 transition-all duration-300">
+                    মোট: 10
+                  </p>
+                </div>
+                <div>
+                  <a href="advucateService.html"
+                    class="flex items-center rounded bg-cyan-500 px-3 py-1 text-white transition-all duration-300 hover:bg-cyan-700 font-anek text-xs"><i
+                      class="fa-solid fa-arrow-right mr-1"></i> পরিচালনা করুন</a>
+                </div>
+              </div>
+            </div>
+            <!-- আইনি ও মিডিয়া সিঙ্গেল কার্ড -->
+            <div
+              class="group  rounded border-x-3 border-cyan-500 p-5 shadow-xs shadow-gray-400 transition-all duration-300 hover:shadow-xl hover:translate-y-[-10px]">
+              <div class="flex justify-between">
+                <div class="w-80">
+                  <h1 class="font-anek text-xl font-semibold text-gray-800">
+                    সাংবাদিক
+                  </h1>
+                  <h1 class="font-anek text-xs font-semibold text-gray-500">
+                    স্থানীয় সাংবাদিকদের সাথে যোগাযোগ করুন
+                  </h1>
+                </div>
+                <div class=" w-20 flex justify-end">
+                  <p>
+                    <i class="fas fa-newspaper rounded-full bg-cyan-100 p-3 text-2xl text-cyan-500  "></i>
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between mt-3">
+                <div>
+                  <p
+                    class="font-anek inline rounded bg-cyan-500 text-xs font-semibold text-white px-2 py-0 hover:bg-cyan-700 transition-all duration-300">
+                    মোট: 10
+                  </p>
+                </div>
+                <div>
+                  <a href="journalistService.html"
+                    class="flex items-center rounded bg-cyan-500 px-3 py-1 text-white transition-all duration-300 hover:bg-cyan-700 font-anek text-xs"><i
+                      class="fa-solid fa-arrow-right mr-1"></i> পরিচালনা করুন</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <hr class="h-[1px]  border-0 bg-gray-200 my-10">
+
+        <!-- নাগরিক সেবা ডিব -->
+        <div class="flex items-center py-4">
+          <div class="w-4/5">
+            <hr class="h-0.5 rounded-full border-0 bg-gradient-to-r from-transparent via-yellow-300 to-transparent" />
+          </div>
+          <div class="w-2/5">
+            <h1 class="font-anek text-center text-2xl font-semibold text-yellow-500">
+              নাগরিক সেবা
+            </h1>
+          </div>
+          <div class="w-4/5">
+            <hr class="h-0.5 rounded-full border-0 bg-gradient-to-r from-transparent via-yellow-300 to-transparent" />
+          </div>
+        </div>
+        <!-- নাগরিক সেবা সকল কার্ড -->
+        <div class="mx-auto w-[98%] pt-5 pb-10">
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-3">
+            <!-- নাগরিক সেবা সিঙ্গেল কার্ড -->
+            <div
+              class="group  rounded border-x-3 border-yellow-500 p-5 shadow-xs shadow-gray-400 transition-all duration-300 hover:shadow-xl hover:translate-y-[-10px]">
+              <div class="flex ">
+                <div class="w-80">
+                  <h1 class="font-anek text-xl font-semibold text-gray-800">
+                    বিদ্যুৎ সেবা
+                  </h1>
+                  <h1 class="font-anek text-xs font-semibold text-gray-500">
+                    বিদ্যুৎ সংক্রান্ত সেবা পান
+                  </h1>
+                </div>
+                <div class="grid w-20 content-center">
+                  <p>
+                    <i class="fas fa-bolt rounded-full bg-yellow-100 p-3 text-2xl text-yellow-500  "></i>
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between mt-3">
+                <div>
+                  <p
+                    class="font-anek inline rounded bg-yellow-500 text-xs font-semibold text-white px-2 py-0 hover:bg-yellow-700 transition-all duration-300">
+                    মোট: 10
+                  </p>
+                </div>
+                <div>
+                  <a href="electirycityService.html"
+                    class="flex items-center rounded bg-yellow-500 px-3 py-1 text-white transition-all duration-300 hover:bg-yellow-700 font-anek text-xs"><i
+                      class="fa-solid fa-arrow-right mr-1"></i> পরিচালনা করুন</a>
+                </div>
+              </div>
+            </div>
+            <!-- নাগরিক সেবা সিঙ্গেল কার্ড -->
+            <div
+              class="group  rounded border-x-3 border-yellow-500 p-5 shadow-xs shadow-gray-400 transition-all duration-300 hover:shadow-xl hover:translate-y-[-10px]">
+              <div class="flex ">
+                <div class="w-80">
+                  <h1 class="font-anek text-xl font-semibold text-gray-800">
+                    কুরিয়ার সেবা
+                  </h1>
+                  <h1 class="font-anek text-xs font-semibold text-gray-500">
+                    দ্রুত পার্সেল সেবা পান
+                  </h1>
+                </div>
+                <div class="grid w-20 content-center">
+                  <p>
+                    <i class="fas fa-shipping-fast rounded-full bg-yellow-100 p-3 text-2xl text-yellow-500  "></i>
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between mt-3">
+                <div class="">
+                  <p
+                    class="font-anek inline rounded bg-yellow-500 text-xs font-semibold text-white px-2 py-0 hover:bg-yellow-700 transition-all duration-300">
+                    মোট: 10
+                  </p>
+                </div>
+                <div class="">
+                  <a href="courierService.html"
+                    class="flex items-center rounded bg-yellow-500 px-3 py-1 text-white transition-all duration-300 hover:bg-yellow-700 font-anek text-xs"><i
+                      class="fa-solid fa-arrow-right mr-1"></i> পরিচালনা করুন</a>
+                </div>
+              </div>
+            </div>
+            <!-- নাগরিক সেবা সিঙ্গেল কার্ড -->
+            <div
+              class="group  rounded border-x-3 border-yellow-500 p-5 shadow-xs shadow-gray-400 transition-all duration-300 hover:shadow-xl hover:translate-y-[-10px]">
+              <div class="flex ">
+                <div class="w-80">
+                  <h1 class="font-anek text-xl font-semibold text-gray-800">
+                    পাসপোর্ট সেবা
+                  </h1>
+                  <h1 class="font-anek text-xs font-semibold text-gray-500">
+                    পাসপোর্ট সংক্রান্ত সেবা পান
+                  </h1>
+                </div>
+                <div class="grid w-20 content-center">
+                  <p>
+                    <i class="fas fa-passport rounded-full bg-yellow-100 p-3 text-2xl text-yellow-500  "></i>
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between mt-3">
+                <div class="">
+                  <p
+                    class="font-anek inline rounded bg-yellow-500 text-xs font-semibold text-white px-2 py-0 hover:bg-yellow-700 transition-all duration-300">
+                    মোট: 10
+                  </p>
+                </div>
+                <div class="">
+                  <a href="passportServices.html"
+                    class="flex items-center rounded bg-yellow-500 px-3 py-1 text-white transition-all duration-300 hover:bg-yellow-700 font-anek text-xs"><i
+                      class="fa-solid fa-arrow-right mr-1"></i> পরিচালনা করুন</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+      </div>
+    </section>
+  </article>
+
+  <footer class="bg-gradient-to-r from-blue-600 to-blue-400 px-4 py-3 text-white sm:px-5">
+    <p class="text-center font-anek font-semibold text-gray-300"> &copy; 2025 জেলা সেবা. সর্বস্বত্ব সংরক্ষিত.</p>
+  </footer>
+
+
+<script>
+  const admin_nav = document.querySelectorAll(".adminMenage");
+  const admin_div = document.querySelectorAll(".admin_div");
+
+  admin_nav.forEach((btn, index) => {
+    btn.addEventListener("click", function () {
+      admin_div[index].classList.toggle("hidden");
+    });
+  });
+
+
+
+
+  // admin_nav.addEventListener("click",function(){
+  //   admin_div.classList.toggle ("hidden");
+  // })
+  
+</script>
+</body>
+
+</html>
