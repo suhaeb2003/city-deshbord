@@ -11,104 +11,113 @@
 
 <body>
     <header class="sticky top-0 z-50">
-        <nav class="from justify-between bg-gradient-to-r from-blue-600 to-blue-400 px-4 py-3 text-white sm:flex sm:px-5"
+        <nav class="flex flex-col md:flex-row justify-between bg-gradient-to-r from-blue-600 to-blue-400 px-4 py-3 text-white sm:flex sm:px-5"
             aria-label="Breadcrumb">
-            <div>
-                <a href="index.html" class="font-anek inline text-xl font-semibold dark:text-white">
+
+            <!-- Logo & Toggle -->
+            <div class="flex justify-between items-center w-full md:w-auto">
+                <a href="../index.html" class="font-anek inline text-xl font-semibold dark:text-white">
                     <i
                         class="fa-regular fa-address-card rounded-full border border-gray-200 bg-gray-50 p-2 text-green-700"></i>
                     জেলা সেবা এডমিন প্যানেল
                 </a>
+                <!-- Mobile Menu Button -->
+                <button id="menu-toggle" class="md:hidden text-white text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
-            <div>
-                <ol class="mb-3 inline-flex items-center space-x-1 sm:mb-0 md:space-x-2 rtl:space-x-reverse">
-                    <li>
-                        <div class="flex items-center">
-                            <a href="index.html"
-                                class="font-anek ms-1 text-sm font-medium text-gray-300 hover:text-blue-600 md:ms-2 dark:hover:text-white"><i
-                                    class="fa-solid fa-gauge mr-1.5"></i>ড্যাশর্বোড</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="relative flex items-center">
-                            <a href="#"
-                                class="font-anek adminMenage ms-1 text-sm font-medium text-gray-300 hover:text-blue-600 md:ms-2 dark:hover:text-white"
-                                id=""><i class="fa-solid fa-users-gear mr-1.5"></i>এডমিন
-                                ম্যানেজমেন্ট <i class="fa-solid fa-caret-down ms-1.5"></i></a>
-                            <div class="broder-gray-200 admin_div absolute top-8 hidden w-max rounded border bg-white p-2"
-                                id="">
-                                <ul>
-                                    <li>
-                                        <a href="" class="font-anek text-sm font-medium text-black hover:bg-gray-50"><i
-                                                class="fas fa-user-edit mr-1"></i>প্রোফাইল</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="font-anek text-sm font-medium text-black hover:bg-gray-50"><i
-                                                class="fas fa-users mr-1"></i>নতুন এডমিন যু্ক্ত
-                                            করুন</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex items-center">
-                            <a href="#"
-                                class="font-anek ms-1 text-sm font-medium text-gray-300 hover:text-blue-600 md:ms-2 dark:hover:text-white"><i
-                                    class="fa-solid fa-folder-open mr-1.5"></i>ফাইল
-                                ম্যানেজার</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex items-center">
-                            <a href="#"
-                                class="font-anek ms-1 text-sm font-medium text-gray-300 hover:text-blue-600 md:ms-2 dark:hover:text-white"><i
-                                    class="fa-solid fa-terminal mr-1.5"></i>এপিআই তালিকা</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex items-center">
-                            <a href="#"
-                                class="font-anek adminMenage ms-1 text-sm font-medium text-gray-300 hover:text-blue-600 md:ms-2 dark:hover:text-white"
-                                id=""><i class="fa-solid fa-circle-user mr-1.5"></i>Users
-                                <i class="fa-solid fa-caret-down ms-1.5"></i></a>
 
-                            <div class="broder-gray-200 admin_div absolute top-10 right-0 hidden w-max rounded border bg-white p-2"
+            <!-- Menu Items -->
+            <div id="mobile-menu" class="hidden md:block mt-3 md:mt-0 ">
+                <ol
+                    class="flex flex-col md:flex-row items-start md:items-center md:mt-2 space-y-2 md:space-y-0 space-x-0 md:space-x-2 rtl:space-x-reverse">
+                    <li>
+                        <div class="flex items-center">
+                            <a href="../index.html"
+                                class="font-anek ms-1 text-sm font-medium text-gray-300 hover:text-blue-600 md:ms-2 dark:hover:text-white">
+                                <i class="fa-solid fa-gauge mr-1.5"></i>ড্যাশর্বোড
+                            </a>
+                        </div>
+                    </li>
+                    <li class="relative">
+                        <div class="flex items-center ">
+                            <p class="font-anek ms-1 text-sm font-medium text-gray-300 hover:text-blue-600 md:ms-2 dark:hover:text-white hover:cursor-pointer adminMenage"
                                 id="">
-                                <ul>
-                                    <li>
-                                        <a href="" class="font-anek text-sm font-medium text-black hover:bg-gray-50"><i
-                                                class="fas fa-user-edit mr-1"></i>প্রোফাইল</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="font-anek text-sm font-medium text-black hover:bg-gray-50"><i
-                                                class="fas fa-users mr-1"></i>নতুন এডমিন যু্ক্ত
-                                            করুন</a>
-                                    </li>
-                                </ul>
-                            </div>
+                                <i class="fa-solid fa-users-gear mr-1.5"></i>এডমিন ম্যানেজমেন্ট
+                                <i class="fa-solid fa-caret-down ms-1.5"></i>
+                            </p>
+
+                        </div>
+                        <div class="bg-white border broder-gray-200 md:absolute w-full pr-2 md:pr-8 md:px-0 md:w-max p-2 md:top-8 rounded hidden admin_div"
+                            id="">
+                            <ul>
+                                <li><a href="profile.html"
+                                        class="font-anek text-sm font-medium text-black hover:bg-gray-50"><i
+                                            class="fas fa-user-edit mr-1"></i>প্রোফাইল</a></li>
+                                <li><a href="adminMenage.html"
+                                        class="font-anek text-sm font-medium text-black hover:bg-gray-50"><i
+                                            class="fas fa-users mr-1"></i>নতুন এডমিন যু্ক্ত করুন</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <a href="fileUpload.html"
+                                class="font-anek ms-1 text-sm font-medium text-gray-300 hover:text-blue-600 md:ms-2 dark:hover:text-white">
+                                <i class="fa-solid fa-folder-open mr-1.5"></i>ফাইল ম্যানেজার
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <a href="apiList.html"
+                                class="font-anek ms-1 text-sm font-medium text-gray-300 hover:text-blue-600 md:ms-2 dark:hover:text-white">
+                                <i class="fa-solid fa-terminal mr-1.5"></i>এপিআই তালিকা
+                            </a>
+                        </div>
+                    </li>
+                    <li class="relative">
+                        <div class="flex items-center">
+                            <p class="font-anek ms-1 text-sm font-medium text-gray-300 hover:text-blue-600 md:ms-2 dark:hover:text-white adminMenage hover:cursor-pointer"
+                                id="">
+                                <i class="fa-solid fa-circle-user mr-1.5"></i>Users
+                                <i class="fa-solid fa-caret-down ms-1.5"></i>
+                            </p>
+
+                        </div>
+                        <div class="bg-white border broder-gray-200 md:absolute w-full pr-8 md:pr-8 md:px-0 md:w-max p-2 md:top-8 right-0 rounded hidden admin_div"
+                            id="">
+                            <ul>
+                                <li><a href="profile.html"
+                                        class="font-anek text-sm font-medium text-black hover:bg-gray-50"><i
+                                            class="fas fa-user-edit mr-1"></i>প্রোফাইল</a></li>
+                                <li><a href="" class="font-anek text-sm font-medium text-black hover:bg-gray-50"><i
+                                            class="fa-solid fa-right-from-bracket mr-1"></i>লগ আউট</a></li>
+                            </ul>
                         </div>
                     </li>
                 </ol>
             </div>
         </nav>
     </header>
+
+
     <main>
         <article>
             <section class="py-5 md:py-10">
                 <div class="mx-auto w-11/12 border-1 border-gray-300 shadow shadow-gray-400">
                     <!-- অ্যাম্বুলেন্স সেবা -->
                     <div class="flex items-center border-b border-gray-300 bg-gray-50 py-5">
-                        <div class="w-4/5">
+                        <div class="w-3/5 md:w-4/5">
                             <hr
                                 class="h-0.5 rounded-full border-0 bg-gradient-to-r from-transparent via-green-300 to-transparent" />
                         </div>
-                        <div class="w-2/5">
-                            <h1 class="font-anek text-center text-3xl font-semibold text-green-700">
+                        <div class="w-3/5 md:w-2/5">
+                            <h1 class="font-anek text-center text-xl md:text-3xl font-semibold text-green-700">
                                 হসপিটাল সেবা
                             </h1>
                         </div>
-                        <div class="w-4/5">
+                        <div class="w-3/5 md:w-4/5">
                             <hr
                                 class="h-0.5 rounded-full border-0 bg-gradient-to-r from-transparent via-green-300 to-transparent" />
                         </div>
@@ -117,22 +126,24 @@
                     <!-- Ambulance service button -->
                     <div class="flex items-center justify-between py-5 px-3">
                         <div class="">
-                            <p class="addService font-anek w-auto rounded bg-green-700 px-2 py-1 text-white hover:bg-green-600 hover:cursor-pointer">
+                            <p
+                                class="addService  font-anek w-auto rounded bg-green-700 px-2 py-1 text-white hover:bg-green-600 hover:cursor-pointer">
                                 <i class="fa-solid fa-plus mr-1"></i>সেবা সংযোগ করুন
                             </p>
                         </div>
                         <div class="">
-                            <a href="index.html" class="font-anek w-auto rounded bg-green-700 px-2 py-0.5 text-white hover:bg-green-600 hover:cursor-pointer">
+                            <a href="../index.html"
+                                class="font-anek w-auto rounded bg-green-700 px-2  text-white hover:bg-green-600 hover:cursor-pointer">
                                 <i class="fa-solid fa-arrow-left mr-1"></i>ড্যাশর্বোডে ফিরে যান
                             </a>
                         </div>
                     </div>
 
                     <!-- Ambulance service modal -->
-                     <div class="hidden addServiceDiv">
-                        <div class="fixed inset-0 bg-white/30 backdrop-blur-2xl h-dvh w-full z-10 flex items-center justify-center"
-                            >
-                            <div class="border border-gray-200 bg-white p-5 w-2/6">
+                    <div class="hidden addServiceDiv">
+                        <div
+                            class="fixed inset-0 bg-white/30 backdrop-blur-2xl h-dvh w-full z-50 flex items-center justify-center">
+                            <div class="border border-gray-200 bg-white p-5 w-5/6 md:w-2/6">
                                 <p class="font-anek text-end text-2xl"><i
                                         class="fa-solid fa-xmark text-gray-500 hover:text-gray-900 transition-all duration-300"
                                         id="closeService"></i></p>
@@ -148,15 +159,16 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="name"
-                                            class="block mb-1 text-sm font-medium text-green-900 font-anek">ঠিকানা ‍<span
-                                                class="text-red-600">*</span></label>
+                                            class="block mb-1 text-sm font-medium text-green-900 font-anek">ঠিকানা
+                                            ‍<span class="text-red-600">*</span></label>
                                         <input type="text" id="name"
                                             class="bg-gray-50 font-anek border border-green-300 text-gray-900 text-sm rounded-lg focus:outline-green-500 block w-full px-2 py-1"
                                             placeholder="ঠিকানা লিখুন" required />
                                     </div>
                                     <div class="mb-3">
                                         <label for="name"
-                                            class="block mb-1 text-sm font-medium text-green-900 font-anek">মোবাইল নাম্বার
+                                            class="block mb-1 text-sm font-medium text-green-900 font-anek">মোবাইল
+                                            নাম্বার
                                             ‍<span class="text-red-600">*</span></label>
                                         <input type="text" id="name"
                                             class="bg-gray-50 font-anek border border-green-300 text-gray-900 text-sm rounded-lg focus:outline-green-500 block w-full px-2 py-1"
@@ -188,62 +200,34 @@
                     </div>
                     <!-- All Ambulance Service list -->
                     <div>
-                        <h1 class="font-anek px-3 text-xl font-semibold text-green-700">সকল হসপিটাল সেবা তালিকা
+                        <h1 class="font-anek px-3 text-xl md:text-base font-semibold text-green-700">সকল হসপিটাল সেবা তালিকা
                         </h1>
                         <div class="p-3 mt-2">
-                            <div class="flex border font-anek border-green-200 rounded shadow-inner shadow-green-100 items-center mb-3">
+                            <div class="relative overflow-x-auto">
+                            <div
+                                class="flex border min-w-[1000px] md:min-w-full font-anek border-green-200 rounded shadow-inner shadow-green-100 items-center mb-3">
                                 <div class="w-2/12">
                                     <img src="../src/image/ic_ambulance.png" alt="" class="w-1/4">
                                 </div>
                                 <div class="w-3/12 text-left">
-                                    <h1 class="font-semibold text-gray-600">আল আবরার হাসপাতাল এন্ড ডায়াগনিস্টিক সেন্টার</h1>
+                                    <h1 class="font-semibold text-gray-600">আল আবরার হাসপাতাল এন্ড ডায়াগনিস্টিক সেন্টার
+                                    </h1>
                                 </div>
                                 <div class="w-2/12 text-center">
-                                    <a href="tel:01700000000" class=" text-gray-600"><i class="fa-solid fa-phone-alt mr-1"></i> 01700000000</a>
+                                    <a href="tel:01700000000" class=" text-gray-600"><i
+                                            class="fa-solid fa-phone-alt mr-1"></i> 01700000000</a>
                                 </div>
                                 <div class="w-3/12 text-center">
-                                    <p class=" text-gray-600"><i class="fa-solid fa-location-dot mr-1"></i> মানিকগন্জ মেডিকেল কলেজ</p>
+                                    <p class=" text-gray-600"><i class="fa-solid fa-location-dot mr-1"></i> মানিকগন্জ
+                                        মেডিকেল কলেজ</p>
                                 </div>
                                 <div class="w-2/12 text-end pr-2">
-                                    <a href="#" class="bg-green-300 w-auto px-2 font-semibold text-xs rounded hover:bg-green-600 hover:text-white transition-all duration-300">Edit</a>
-                                    <a href="#" class="bg-green-300 w-auto px-2 font-semibold text-xs rounded hover:bg-green-600 hover:text-white transition-all duration-300">Delete</a>
+                                    <a href="#"
+                                        class="bg-green-300 w-auto px-2 font-semibold text-xs rounded hover:bg-green-600 hover:text-white transition-all duration-300">Edit</a>
+                                    <a href="#"
+                                        class="bg-green-300 w-auto px-2 font-semibold text-xs rounded hover:bg-green-600 hover:text-white transition-all duration-300">Delete</a>
                                 </div>
                             </div>
-                            <div class="flex border font-anek border-green-200 rounded shadow-inner shadow-green-100 items-center mb-3">
-                                <div class="w-2/12">
-                                    <img src="../src/image/ic_ambulance.png" alt="" class="w-1/4">
-                                </div>
-                                <div class="w-3/12 text-left">
-                                    <h1 class="font-semibold text-gray-600">আল আবরার হাসপাতাল এন্ড ডায়াগনিস্টিক সেন্টার</h1>
-                                </div>
-                                <div class="w-2/12 text-center">
-                                    <a href="tel:01700000000" class=" text-gray-600"><i class="fa-solid fa-phone-alt mr-1"></i> 01700000000</a>
-                                </div>
-                                <div class="w-3/12 text-center">
-                                    <p class=" text-gray-600"><i class="fa-solid fa-location-dot mr-1"></i> মানিকগন্জ মেডিকেল কলেজ</p>
-                                </div>
-                                <div class="w-2/12 text-end pr-2">
-                                    <a href="#" class="bg-green-300 w-auto px-2 font-semibold text-xs rounded hover:bg-green-600 hover:text-white transition-all duration-300">Edit</a>
-                                    <a href="#" class="bg-green-300 w-auto px-2 font-semibold text-xs rounded hover:bg-green-600 hover:text-white transition-all duration-300">Delete</a>
-                                </div>
-                            </div>
-                            <div class="flex border font-anek border-green-200 rounded shadow-inner shadow-green-100 items-center mb-3">
-                                <div class="w-2/12">
-                                    <img src="../src/image/ic_ambulance.png" alt="" class="w-1/4">
-                                </div>
-                                <div class="w-3/12 text-left">
-                                    <h1 class="font-semibold text-gray-600">আল আবরার হাসপাতাল এন্ড ডায়াগনিস্টিক সেন্টার</h1>
-                                </div>
-                                <div class="w-2/12 text-center">
-                                    <a href="tel:01700000000" class=" text-gray-600"><i class="fa-solid fa-phone-alt mr-1"></i> 01700000000</a>
-                                </div>
-                                <div class="w-3/12 text-center">
-                                    <p class=" text-gray-600"><i class="fa-solid fa-location-dot mr-1"></i> মানিকগন্জ মেডিকেল কলেজ</p>
-                                </div>
-                                <div class="w-2/12 text-end pr-2">
-                                    <a href="#" class="bg-green-300 w-auto px-2 font-semibold text-xs rounded hover:bg-green-600 hover:text-white transition-all duration-300">Edit</a>
-                                    <a href="#" class="bg-green-300 w-auto px-2 font-semibold text-xs rounded hover:bg-green-600 hover:text-white transition-all duration-300">Delete</a>
-                                </div>
                             </div>
                         </div>
 
@@ -278,7 +262,12 @@
         closeService.addEventListener("click", function () {
             addServiceDiv.classList.add("hidden");
         });
+        const toggleBtn = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
 
+        toggleBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
 
     </script>
 </body>
